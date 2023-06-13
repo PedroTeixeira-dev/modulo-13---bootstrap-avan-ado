@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_css_bootstrap.min.css">
+    <title>Bootstrap-Card</title>
+    <style>
+        .card-img-overlay {
+            background-color: rgba(0,0,0,0.6);
+        }
+        #botao {
+            margin-bottom: 10px;
+        }
+
+        .conteudo {
+            opacity: 0;
+            transition: opacity 1s;
+            
+        }
+
+        .card:hover .conteudo {
+            opacity: 1;
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Bootstrap - Cards</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Cabeçalho do card
+                    </div>
+                    <img src="https://via.placeholder.com/100x100" />
+                    <div class="card-body">
+                        <h4 class="card-title">Título do card</h4>
+                        <h5 class="card-subtitle">Subtítulo do card</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo aut qui molestias earum, doloribus deleniti mollitia impedit dolor laudantium natus unde ut beatae nam dolores voluptatum asperiores id itaque. Illum!</p>
+                        <a href="#" class="btn btn-primary">Botão link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <img  src="https://cdn.pixabay.com/photo/2022/02/07/12/17/street-6999284_960_720.jpg"  />
+                    <div class="card-img-overlay">
+                        <h4 class="card-title conteudo">Título do card</h4>
+                        <h5 class="card-subtitle conteudo">Subtítulo do card</h5>
+                        <p class="card-text conteudo">Lorem ipsum dolor sit amet consectetur adipisicing elit.a impedit dolor laudantium natus unde ut beatae nam dolores voluptatum asperiores id itaque. Illum!</p>
+                        <a  href="#" class="btn btn-primary conteudo">Botão link</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <article class="card">
+                    <header class="card-header">
+                        Desenvolvimeto Web
+                    </header>
+                    <img src="https://getbootstrap.com/docs/5.3/assets/brand/bootstrap-logo-shadow.png"  />
+                    <div class="card-body">
+                        <h4 class="card-title">Cards do Bootstrap</h4>
+                        <p class="card-text">Conheca os cards do bootstrap e suas aplicacoes</p>
+                        <a id="botao" href="#" class="btn btn-primary">Leia mais</a>
+                        <footer class="card-footer">
+                            Postado em<time>13/06/2023</time>
+                        </footer>
+                    </div>
+                </article>
+            </div>
+            
+        </div>
+        
+    </div>
+
+
+    <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.0_dist_js_bootstrap.bundle.min.js"></script>
+</body>
+</html>
